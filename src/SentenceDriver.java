@@ -28,17 +28,20 @@ public class SentenceDriver
 
         displayMenu();
 
-        while (true) {
+        while (true) 
+        {
             System.out.print("Enter Menu Option: ");
 
-            while (!scanner.hasNextInt()) {
+            while (!scanner.hasNextInt()) 
+            {
                 System.out.println("Invalid Menu Option");
                 scanner.nextLine();
             }// end while scanner
             choice = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choice) {
+            switch (choice) 
+            {
                 case 0:
                     displayMenu();
                     break;
@@ -59,16 +62,19 @@ public class SentenceDriver
 
                     break;
                 case 2:
-                    if ( sentence == null) {
+                    if ( sentence == null) 
+                    {
                         System.out.println("No input entered: ");
                     }// end if
-                    else {
+                    else 
+                    {
                         sentence.shuffle();
                         System.out.println("Sentence Shuffled: ");
-                    }
+                    }// end else 
                     break;
                 case 3:
-                    if ( sentence == null) {
+                    if ( sentence == null) 
+                    {
                         System.out.println("No input entered: ");
                     }// end if
                     else
